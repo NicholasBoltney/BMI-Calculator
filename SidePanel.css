@@ -1,0 +1,67 @@
+#WhatIsBMIBtn{
+  cursor: pointer;
+  color: rgb(245, 245, 245);
+  font-family: Helvetica, sans-serif;
+  font-weight: 700;
+  transition: .2s;
+  /* display: inline; */
+  position: absolute;
+  z-index: 101;
+  top: 18px;
+  left: 30px;
+}
+#WhatIsBMIBtn:hover{
+  color: rgb(206, 206, 206);
+}
+#SidePanelParent{
+  width: 400px;
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  left: -410px;
+  /* z-index: 101; */
+  background-color: rgba(95, 95, 95, 0.247);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  display: grid;
+  justify-content: center;
+  opacity: 0;
+  z-index: 102;
+
+}
+#InfoHolder{
+  /* background-color: lightblue; */
+  width: 350px;
+}
+
+#HeaderHolder{
+  display: flex;
+  justify-content: space-between;
+}
+#crossSidePanel{
+  filter: invert(100%) sepia(9%) saturate(192%) hue-rotate(105deg) brightness(118%) contrast(92%);
+  width: 50px;
+  cursor: pointer;
+  transition: .3s;
+}
+#crossSidePanel:hover{
+  filter: invert(100%) sepia(9%) saturate(192%) hue-rotate(105deg) brightness(100%) contrast(50%);
+}
+
+.BMIInfoHeader{
+  font-family: Helvetica, sans-serif;
+  color: rgb(245, 245, 245);
+  font-weight: 700;
+}
+.BMIInfoFont{
+  font-family: Helvetica, sans-serif;
+  color: rgb(245, 245, 245);
+  font-size: 20px;
+  font-weight: 100;
+}
+.OpenSidePanelClass{
+  transition: 1s;
+  opacity: 1 !important;
+  transform: translateX(420px);
+}
+

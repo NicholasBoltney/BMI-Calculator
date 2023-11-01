@@ -5,22 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BMI Calculator</title>
     <link rel="stylesheet" href="HomeUI.css"/>
+    <link rel="stylesheet" href="SidePanel.css"/>
   </head>
-  <body>
+  <body id="body">
     <div id="HeadingHolder">
-      <h1 id="Header">BMI Tester</h1>
+      <h1 id="Header">BMI Calculator</h1>
     </div>
-    <img id="BackgroundIMG" src="IMG/italian-cuisine-2378729_1920Copy.jpg"/>
+    <img id="BackgroundIMG" src="IMG/jam-4521023_1920Copy2.jpg"/>
+    <div>
+      <p id="WhatIsBMIBtn" onclick="OpenSidePanel()">What is BMI?</p>
+    </div>
+
+    
+
+    <div id="SidePanelParent">
+      <div id="InfoHolder">
+        <div id="HeaderHolder">
+          <h2 class="BMIInfoHeader">BMI</h2>
+          <img src="SVG/cross-svgrepo-com.svg" id="crossSidePanel" onclick="CloseSideMenu()"/>
+        </div>
+        <p class="BMIInfoFont">Body Mass Index (BMI) is a person's weight in kilograms 
+          divided by the square of height in meters. 
+          A low BMI ranging from 16 to 18.5 can indicate an unhealthily low amount of body fatness. 
+          A high BMI ranging from 25 and above can indicate an unhealthily high amount of body fatness.</p>
+      </div>
+    </div>
+
+
+
+
     <div id="InputsHolder">
       <form id="formHolder">
         <input type="text" id="weightInput" placeholder="Weight (kg)"/>
         <input type="text" id="heightInput" placeholder="Height (m)"/>
-        <button onclick="CalculateBMI()">Calculate</button>
+        <button id="CalculateBMIBtn" onclick="CalculateBMI()">Calculate</button>
+        <div id="ScoreHolder">
+          <p id="ScoreText"></p>
+        </div>
       </form>
     </div>
 
 
 
+
+
     <script src="Calculate.js"></script>
+    <script src="ShowSidePanel.js"></script>
   </body>
 </html>
